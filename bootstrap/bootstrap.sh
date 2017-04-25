@@ -54,7 +54,7 @@ main() {
     brew install openssl
     brew install pcre
     brew install pkg-config
-    brew install --build-from-source ./bootstrap/protobuf261.rb
+    brew install --build-from-source ~/bootstrap/protobuf261.rb
 
     brew install readline
     brew install scala
@@ -205,7 +205,7 @@ main() {
     pip install jupyter-contrib-nbextensions
     pip install jupyter-core
     pip install jupyter-highlight-selected-word
-    pip install jupyter-lal tex-envs
+    pip install jupyter-latex-envs
     pip install jupyter-nbextensions-configurator
     pip install jupyterthemes
     pip install Keras
