@@ -259,8 +259,6 @@ main() {
     pip install texttable
     pip install Theano
     pip install thrift
-    pip install torch
-    pip install torchvision
     pip install tornado
     pip install tqdm
     pip install traceback2
@@ -273,6 +271,9 @@ main() {
     pip install youtube-dl
 
     ~/bin/decrypt.sh
+
+    # install jupyter extensions
+    jupyter contrib nbextension install --user
 
     # os apps
     # intellij
