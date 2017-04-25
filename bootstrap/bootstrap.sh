@@ -35,6 +35,7 @@ main() {
     brew cask install telegram-desktop
     brew cask install adobe-acrobat
     brew cask install firefox
+    brew cask install spectacle
 
     brew install autoconf
     brew install automake
@@ -270,7 +271,9 @@ main() {
     pip install yapf
     pip install youtube-dl
 
-    ~/bin/decrypt.sh
+    ~/bin/decrypt.sh ~/.ssh_enc ~/.ssh/
+    ~/bin/decrypt.sh ~/.aws_enc ~/.aws/
+    ~/bin/decrypt.sh .aws_enc/keys .aws/keys
 
     # install jupyter extensions
     jupyter contrib nbextension install --user
@@ -279,16 +282,6 @@ main() {
         rm -rf ~/Library/Jupyter/nbextensions/snippets/snippets.json
     fi
     ln -s ~/bootstrap/snippets.json ~/Library/Jupyter/nbextensions/snippets/snippets.json
-
-    # os apps
-    # intellij
-    # ssh keys
-    # dotfiles
-    # pip
-    # python notebook
-    # python extensions
-    # mac os settings
-
 
     # test
     # 1. git clone workspace/compile

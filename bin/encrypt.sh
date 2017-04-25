@@ -2,13 +2,16 @@
 echo -n "Enter encryption password:"
 read -s password
 echo
-if [[ ! -d ~/.ssh_enc ]]
+if [[ ! -d ~/${2} ]]
 then
-  mkdir ~/.ssh_enc
+  mkdir ~/${2}
 fi
-pushd ~/.ssh
+pushd ~/${1}
 for f in *
 do
-  openssl enc -aes-256-cbc -a -salt -in ${f} -out ~/.ssh_enc/${f}.enc -pass pass:${password}
+  if [[ -f ${f} ]]
+  then
+    openssl enc -aes-256-cbc -a -salt -in ${f} -out ~/${2}/${f}.enc -pass pass:${password}
+  fi
 done
 popd
