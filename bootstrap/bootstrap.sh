@@ -274,6 +274,11 @@ main() {
 
     # install jupyter extensions
     jupyter contrib nbextension install --user
+    if [[ -e ~/Library/Jupyter/nbextensions/snippets/snippets.json ]]
+    then
+        rm -rf ~/Library/Jupyter/nbextensions/snippets/snippets.json
+    fi
+    ln -s ~/bootstrap/snippets.json ~/Library/Jupyter/nbextensions/snippets/snippets.json
 
     # os apps
     # intellij
