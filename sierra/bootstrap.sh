@@ -35,7 +35,7 @@ main() {
     vim +PluginInstall +qall
 
     # setup brew
-    echo | /usr/bin/ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+    echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
     brew cask install java
     brew cask install osxfuse
