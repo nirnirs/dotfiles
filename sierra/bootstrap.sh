@@ -20,7 +20,17 @@ on_exit() {
 main() {
     trap on_exit EXIT
 
+    if [[ ! -d ~/.vim ]]
+    then
+        mkdir ~/.vim
+    fi
+
     # install vim plugins
+    if [[ -d ~/.vim/bundle ]]
+    then
+        rm -rf ~/.vim/vundle
+    fi
+
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
 
