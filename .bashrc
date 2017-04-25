@@ -18,5 +18,4 @@ eval "$(pyenv init -)"
 
 source ~/.bash-powerline.sh
 
-export HOMEBREW_GITHUB_API_TOKEN=a8716cfc81c0df36c9750577abf0e9fea73b143e
 export SCALA_HOME=/Users/nirs/homebrew/opt/scala/idea
