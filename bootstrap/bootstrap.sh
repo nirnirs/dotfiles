@@ -28,6 +28,13 @@ main() {
 
     brew cask install java
     brew cask install osxfuse
+    brew cask install iterm2
+    brew cask install google-chrome
+    brew cask install intellij-idea
+    brew cask install whatsapp
+    brew cask install telegram-desktop
+    brew cask install adobe-acrobat
+    brew cask install firefox
 
     brew install autoconf
     brew install automake
