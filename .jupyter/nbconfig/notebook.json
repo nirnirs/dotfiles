@@ -1,0 +1,30 @@
+{
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  },
+  "highlight_selected_word": {
+    "enable_on_load": false
+  },
+  "Notebook": {
+    "Toolbar": true,
+    "Header": true
+  },
+  "hinterland": {
+    "enable_at_start": false
+  },
+  "load_extensions": {
+    "navigation-hotkeys/main": true,
+    "code_prettify/code_prettify": true,
+    "highlight_selected_word/main": true,
+    "hinterland/hinterland": true,
+    "jupyter-js-widgets/extension": true,
+    "notify/notify": true,
+    "snippets/main": true,
+    "code_prettify/autopep8": true,
+    "qtconsole/qtconsole": true,
+    "contrib_nbextensions_help_item/main": true,
+    "nbextensions_configurator/config_menu/main": true
+  }
+}
