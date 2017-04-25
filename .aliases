@@ -1,0 +1,26 @@
+function fif {
+  find . -name "$1" -type f | xargs grep ${@:2}
+}
+
+alias issh='python ${WAZE_GIT_ROOT}/ifs/utilities/issh/issh'
+alias li='python ${WAZE_GIT_ROOT}/ifs/utilities/list_instances/aws/list_instances.py'
+alias review="git push origin HEAD:refs/for/master" 
+
+alias gpl="gli waze-prod"
+alias gdl="gli waze-development"
+
+function gli {
+    local project="${1}"
+    local regex="${2}"
+    gcloud --project ${project} compute instances list --format='table[](name:sort=1,networkInterfaces[0].accessConfigs[0].natIP:label=EXTERNAL_IP,networkInterfaces[0].networkIP:label=INTERNAL_IP,machineType,zone:sort=2,creationTimestamp.date("%Y/%m/%d %H:%M",tz=UTC):label=CREATED:sort=3,id:label=UUID,cpuPlatform,status)' -r ".*${regex}.*"
+}
+
+function pssh {
+    gssh ${1} waze-prod
+}
+
+function dssh {
+    gssh ${1} waze-development
+}
+
+
