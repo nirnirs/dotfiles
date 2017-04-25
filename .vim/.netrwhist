@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/nirs/workspace/java/MapTest/build'
+let g:netrw_dirhist_2='/Users/nirs/workspace/java/ParkingServer.old'
+let g:netrw_dirhist_3='/Users/nirs/workspace/web/waze-debug-map/src/scripts/controls/from_to_permalink'
+let g:netrw_dirhist_4='/Users/nirs/workspace/web/waze-debug-map/src/scripts/controls/route_feedback'
