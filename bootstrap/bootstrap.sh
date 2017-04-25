@@ -54,7 +54,7 @@ main() {
     brew install openssl
     brew install pcre
     brew install pkg-config
-    brew install --build-from-source ./protobuf261.rb
+    brew install --build-from-source ./bootstrap/protobuf261.rb
 
     brew install readline
     brew install scala
