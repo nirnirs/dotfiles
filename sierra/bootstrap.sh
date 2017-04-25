@@ -21,7 +21,7 @@ main() {
     trap on_exit EXIT
 
     # setup brew
-    echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo | /usr/bin/ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 
     brew cask install java
     brew cask install osxfuse
@@ -261,6 +261,8 @@ main() {
     pip install widgetsnbextension
     pip install yapf
     pip install youtube-dl
+
+    ~/bin/decrypt.sh
 
     # os apps
     # intellij
