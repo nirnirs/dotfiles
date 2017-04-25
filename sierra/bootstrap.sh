@@ -20,6 +20,10 @@ on_exit() {
 main() {
     trap on_exit EXIT
 
+    # install vim plugins
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
+
     # setup brew
     echo | /usr/bin/ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 
