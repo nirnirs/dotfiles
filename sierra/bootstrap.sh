@@ -2,17 +2,6 @@
 
 set -e
 
-# install brew
-# brew install stuff
-
-# autoconf                        gettext                         icu4c                           memcached                       openssl@1.1                     readline                        sshu#ttle
-# automake                        gradle                          libevent                        nginx                           pcre                            reattach-to-user-namespace      tig
-# coreutils                       groovy                          libtool                         node                            pkg-config                      redsocks                        tmux
-# doxygen                         htop                            mackup                          ntfs-3g                         protobuf261                     scala                           wget
-# gdbm                            hub                             makedepend                      openssl                         pyenv                           sqlite
-
-
-
 on_exit() {
     echo "Cleaning up..."
 }
@@ -28,7 +17,7 @@ main() {
     # install vim plugins
     if [[ -d ~/.vim/bundle ]]
     then
-        rm -rf ~/.vim/vundle
+        rm -rf ~/.vim/bundle
     fi
 
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
