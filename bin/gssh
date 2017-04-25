@@ -1,0 +1,29 @@
+#!/bin/bash
+# Created by Nir Tarcic
+# SSH to GCP servers based on UUID or hostname
+
+if [ $# -eq 0 -o $# -gt 2 ]; then
+	echo "Usage: $0 UUID/hostname [Optional:Project-Name (Default: waze-prod)]"
+	echo "Example: $0 5820650633742086466 waze-prod"
+	echo "Example: $0 routingserver-long-am-v023-yxny"
+	exit 1
+fi
+
+# Set default project or project from user if defined
+if [ $# -eq 2 ]; then
+	project=${2}
+else
+	project='waze-prod'
+fi
+
+re='^[0-9]+$'
+if [[ ${1} =~ $re ]]; then
+	filter="id=${1}"
+else
+	filter="name=${1}"
+fi
+
+# Get the IP of the instance based on ID or full name
+ip=`gcloud compute instances list --filter "$filter" --format='value(networkInterfaces[0].accessConfigs[0].natIP)' --project=$project`
+# SSH to the server
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $ip
