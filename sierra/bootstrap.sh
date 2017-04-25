@@ -54,8 +54,8 @@ main() {
 
     # configure pynev
     brew install pyenv
-    echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
     eval "$(pyenv init -)"
+
     pyenv install 2.7.13
     pyenv install 3.5.2
 
