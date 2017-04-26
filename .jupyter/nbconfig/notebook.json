@@ -1,8 +1,6 @@
 {
-  "Cell": {
-    "cm_config": {
-      "lineNumbers": true
-    }
+  "hinterland": {
+    "enable_at_start": false
   },
   "highlight_selected_word": {
     "enable_on_load": false
@@ -11,20 +9,24 @@
     "Toolbar": true,
     "Header": true
   },
-  "hinterland": {
-    "enable_at_start": false
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
   },
   "load_extensions": {
-    "navigation-hotkeys/main": true,
-    "code_prettify/code_prettify": true,
-    "highlight_selected_word/main": true,
-    "hinterland/hinterland": true,
-    "jupyter-js-widgets/extension": true,
     "notify/notify": true,
-    "snippets/main": true,
     "code_prettify/autopep8": true,
-    "qtconsole/qtconsole": true,
+    "code_prettify/code_prettify": true,
     "contrib_nbextensions_help_item/main": true,
-    "nbextensions_configurator/config_menu/main": true
+    "table_beautifier/main": true,
+    "highlight_selected_word/main": true,
+    "nbextensions_configurator/config_menu/main": true,
+    "qtconsole/qtconsole": true,
+    "jupyter-js-widgets/extension": true,
+    "snippets/main": true,
+    "navigation-hotkeys/main": true,
+    "hinterland/hinterland": true,
+    "scratchpad/main": true
   }
 }
