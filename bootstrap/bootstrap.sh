@@ -36,6 +36,7 @@ main() {
     brew cask install adobe-acrobat
     brew cask install firefox
     brew cask install spectacle
+    brew cask install visual-studio-code
 
     brew install autoconf
     brew install automake
@@ -273,7 +274,7 @@ main() {
 
     ~/bin/decrypt.sh ~/.ssh_enc ~/.ssh/
     ~/bin/decrypt.sh ~/.aws_enc ~/.aws/
-    ~/bin/decrypt.sh .aws_enc/keys .aws/keys
+    ~/bin/decrypt.sh ~/.aws_enc/keys ~/.aws/keys
 
     # install jupyter extensions
     jupyter contrib nbextension install --user
