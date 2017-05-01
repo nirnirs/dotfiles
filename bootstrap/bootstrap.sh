@@ -37,6 +37,11 @@ main() {
     brew cask install firefox
     brew cask install spectacle
     brew cask install visual-studio-code
+    brew cask install mactex
+    brew cask install vagrant
+    brew cask install vagrant-manager
+    brew cask install virtualbox
+    brew cask install virtualbox-extension-pack
 
     brew install autoconf
     brew install automake
@@ -63,6 +68,9 @@ main() {
     brew install tig
     brew install tmux
     brew install wget
+
+    brew install apache-spark
+    brew install pandoc
 
     # configure pynev
     brew install pyenv

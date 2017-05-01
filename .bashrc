@@ -19,3 +19,6 @@ eval "$(pyenv init -)"
 source ~/.bash-powerline.sh
 
 export SCALA_HOME=/Users/nirs/homebrew/opt/scala/idea
+
+# add mactex binaries to our path
+export PATH=/Library/TeX/texbin:$PATH
