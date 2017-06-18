@@ -62,6 +62,8 @@ main() {
     brew install pcre
     brew install pkg-config
     brew install --build-from-source ~/bootstrap/protobuf261.rb
+    brew install bazel
+
 
     brew install readline
     brew install scala
